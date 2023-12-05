@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from '../database/database.module';
 import { GraphQLModule } from '@nestjs/graphql';
-//import path from 'node:path';
 import { ProductsResolver } from './graphql/resolvers/products.resolver';
 import {
   ApolloFederationDriver,
@@ -22,7 +21,7 @@ import { MessagingModule } from '../messaging/messaging.module';
     MessagingModule,
     GraphQLModule.forRoot<ApolloFederationDriverConfig>({
       driver: ApolloFederationDriver,
-      autoSchemaFile: { path: 'src/schema.gql', federation: 2 },
+      autoSchemaFile: { path: 'src/schema.gql' },
     }),
   ],
   providers: [
