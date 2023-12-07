@@ -13,6 +13,7 @@ import { PurchasesResolver } from './graphql/resolvers/purchases.resolver';
 import { CustomersResolver } from './graphql/resolvers/customers.resolver';
 import { CustomersService } from '../services/customers.service';
 import { MessagingModule } from '../messaging/messaging.module';
+import { ApolloServerPluginInlineTrace } from '@apollo/server/plugin/inlineTrace';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { MessagingModule } from '../messaging/messaging.module';
     GraphQLModule.forRoot<ApolloFederationDriverConfig>({
       driver: ApolloFederationDriver,
       autoSchemaFile: { path: 'src/schema.gql' },
+      plugins: [ApolloServerPluginInlineTrace()],
     }),
   ],
   providers: [

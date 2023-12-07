@@ -13,6 +13,7 @@ import { StudentsService } from '../services/students.service';
 import { CoursesResolver } from './graphql/resolvers/courses.resolver';
 import { EnrollmentsResolver } from './graphql/resolvers/enrollments.resolver';
 import { StudentsResolver } from './graphql/resolvers/students.resolver';
+import { ApolloServerPluginInlineTrace } from '@apollo/server/plugin/inlineTrace';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { StudentsResolver } from './graphql/resolvers/students.resolver';
     GraphQLModule.forRoot<ApolloFederationDriverConfig>({
       driver: ApolloFederationDriver,
       autoSchemaFile: { path: 'src/schema.gql' },
+      plugins: [ApolloServerPluginInlineTrace()],
     }),
   ],
   providers: [

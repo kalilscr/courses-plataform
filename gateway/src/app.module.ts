@@ -8,7 +8,6 @@ import { GraphQLModule } from '@nestjs/graphql';
     GraphQLModule.forRoot<ApolloGatewayDriverConfig>({
       driver: ApolloGatewayDriver,
       server: {
-        //cors: true,
         context: ({ req }) => {
           return { headers: req.headers };
         },
