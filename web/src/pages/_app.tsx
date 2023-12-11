@@ -1,6 +1,6 @@
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import { AppProps } from 'next/app';
-import './globals.css'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
