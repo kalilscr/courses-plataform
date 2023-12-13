@@ -7,6 +7,7 @@
 - Apollo Client (GraphQL)
 - Prisma ORM
 - Tailwind
+- Auth0
 
 ## Mudanças que foram necessárias
 
