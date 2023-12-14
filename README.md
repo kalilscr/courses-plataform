@@ -11,7 +11,7 @@
 
 ## Arquitetura
 
-<img src="/architecture-courses-plataform.png" alt="" style="height: 100px; width:100px;"/>
+<img src="/architecture-courses-plataform.png"/>
 
 ## Mudanças que foram necessárias
 
