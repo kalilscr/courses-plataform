@@ -9,6 +9,10 @@
 - Tailwind
 - Auth0
 
+## Arquitetura
+
+<img src="/architecture-courses-plataform.png" alt="" style="height: 100px; width:100px;"/>
+
 ## Mudanças que foram necessárias
 
 Ao acompanhar o desenvolvimento dessa aplicação, notei que alguns pacotes estavam muito desatualisados, deprecados ou até mesmo não existiam mais, com isso tive que fazer algumas adaptações pois haviam várias breaking changes, as principais delas foram em relação a autenticação, ao apollo federation e gateway, além do nextjs.
